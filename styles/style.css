@@ -1,0 +1,461 @@
+/*  primary setup*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+p {
+  font-weight: 400;
+}
+
+/*header*/
+
+#hero-section {
+  background: blue;
+}
+.header {
+  padding: 42px 120px 0px 156px;
+}
+.header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > nav > ul {
+  display: flex;
+}
+.header > nav > ul li {
+  list-style-type: none;
+  padding-right: 36px;
+}
+.header > nav > ul li:last-child {
+  padding-right: 0px;
+}
+.header > nav > ul li a:hover {
+color:  #e02c6d;
+}
+.header > nav > ul li a {
+  font-size: 16px;
+  padding: 10px;
+}
+
+
+/* Login Button */
+.login-search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header > nav .login-button {
+  background: #e02c6d;
+  border: none;
+  padding: 10px 24px;
+  width: 123px;
+  text-align: center;
+}
+
+
+.header > nav .login-button i {
+  padding-right: 5px;
+}
+
+
+/* Header Content */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content-text {
+  width: 485px;
+}
+.header-content-text > h1 {
+  font-size: 64px;
+  color: #fff;
+}
+.live-button,
+.watch-button {
+  background: #e02c6d;
+  padding: 10px 24px;
+  width: 168;
+  display: inline-block;
+  margin-top: 27px;
+ 
+}
+.live-button i,
+.watch-button i {
+  padding-left: 5px;
+}
+
+.header-img > img {
+  width: 556px;
+  height: 438px;
+  margin-top: 49px;
+  margin-right: 46px;
+}
+/* Image Animation */
+.header-img > img:hover {
+  transform: scale(1.1);
+  transition: 0.7s ease-in-out;
+}
+/*--------------------------
+      ARTICLE STYLES 
+--------------------------*/
+
+article {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 330px);
+  grid-row-gap: 27px;
+  grid-column-gap: 50px;
+  margin: 70px 210px 0px 180px;
+}
+article > .article-item {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  width: 330px;
+  padding: 15px;
+}
+article > .article-item > img {
+  width: 300px;
+  height: 256px;
+}
+article > .article-item h2 {
+  margin-top: 16px;
+  color: #18191f;
+  font-weight: 700;
+  font-size: 28px;
+}
+article > .article-item p {
+  margin-top: 10px;
+  color: #6c6c6c;
+  font-size: 16px;
+}
+
+
+
+/*-----------------------------------
+       Match HighLights Styles 
+  ------------------------------------*/
+
+.highlight-section {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 100px;
+}
+.highlight-text {
+  width: 467px;
+  margin-right: 66px;
+}
+.highlight-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0a0826;
+}
+.highlight-text p {
+  line-height: 28px;
+  color: #6c6c6c;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.highlight-text a {
+  margin-top: 24px;
+}
+.highlight-img > img {
+  width: 567px;
+  height: 427px;
+}
+
+/* Subscribe Section */
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.subscribe h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.subscribe input {
+  font-size: 22px;
+  padding: 10px;
+  border-top: 1px solid #000;
+}
+.subscribe button {
+  font-size: 22px;
+  padding: 12px;
+  cursor: pointer;
+  background: #e02c6d;
+  color: #fff;
+  border: none;
+}
+/* Footer Section */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 158px;
+  margin-bottom: 63px;
+}
+.footer-content img {
+  width: 484px;
+  height: 100px;
+}
+.social-icons {
+  margin: 20px 0px;
+}
+.footer-content a {
+  color: #969bab;
+  background: #6c6c6c;
+  border: 1px solid #6c757d;
+  align-self: center;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px 0px;
+  margin-right: 14px;
+}
+.footer-content a:last-child {
+  margin-right: 0;
+}
+
+/* Footer Icon Animation */
+
+
+
+.footer-content i {
+  width: 32px;
+  height: 32px;
+  font-size: 100%;
+}
+.footer-content p {
+  font-size: 18px;
+}
+
+/*============================
+        RESPONSIVE SECTION
+=============================*/
+
+/* Mobile Device */
+
+@media only screen and (max-width: 687px) {
+  .header {
+    width: 100%;
+    padding: 42px 0px 0px 16px;
+    position: relative;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav ul li {
+    display: none;
+  }
+  .login-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header-content-text {
+    width: 90%;
+  }
+  .header-content-text h1 {
+    font-size: 32px;
+    width: 278px;
+    margin-top: 46px;
+  }
+  .header-img {
+    width: 95%;
+  }
+  .header-img img {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 0px;
+    height: auto;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 100px 0% 60px 0%;
+    padding: 0% 5%;
+  }
+  article .article-item {
+    width: 100%;
+  }
+  article .article-item img {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .highlight-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .highlight-text {
+    width: 100%;
+    margin-right: 0px;
+    padding: 15px;
+  }
+  .highlight-section .highlight-text h2 {
+    font-size: 30px;
+  }
+  .highlight-section .highlight-img {
+    margin-top: 29px;
+  }
+  .highlight-section .highlight-img img {
+    width: 100%;
+    height: auto;
+    padding: 0% 5%;
+  }
+  .subscribe {
+    width: 100%;
+    padding: 0% 5%;
+  }
+  .subscribe h2 {
+    font-size: 30px;
+  }
+  .subscribe input {
+    width: 100%;
+  }
+  .subscribe button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  footer .footer-content {
+    width: 100%;
+  }
+  footer .footer-content img {
+    width: 70%;
+  }
+}
+
+/* Tablet Device */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header {
+    width: 100%;
+    padding: 42px 0px 0px 16px;
+    position: relative;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav ul li {
+    display: none;
+  }
+  .login-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+ 
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header-content-text {
+    width: 90%;
+  }
+  .header-content-text h1 {
+    font-size: 35px;
+    width: 300px;
+    margin-top: 46px;
+  }
+  .header-img {
+    width: 95%;
+  }
+  .header-img img {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 0px;
+    height: auto;
+  }
+  article {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 5%;
+    grid-column-gap: 10px;
+  }
+  
+  .highlight-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .highlight-text {
+    width: 100%;
+    margin-right: 0px;
+    padding: 15px;
+  }
+  .highlight-section .highlight-text h2 {
+    font-size: 30px;
+  }
+  .highlight-section .highlight-img {
+    margin-top: 29px;
+  }
+  .highlight-section .highlight-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium Device */
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .header{
+    width: 100%;
+    padding: 42px 16px 0px 16px;
+    position: relative;
+  }
+  .header > nav > ul li {
+    padding-right: 15px;
+  }
+  .login-button {
+    width: 180px;
+  }
+  .header-content-text > h1 {
+    font-size: 50px;
+  }
+  article {
+    grid-column-gap: 10px;
+    margin: 70px 2% 0px 2%;
+    padding: 0% 5%;
+  }
+  .highlight-section {
+    padding: 0px 5%;
+  }
+  .highlight-text h2 {
+    font-size: 40px;
+  }
+  .subscribe h2 {
+    margin-bottom: 50px;
+  }
+}
